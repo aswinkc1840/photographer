@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<form enctype="multipart/form-data" method="post">
+    {% csrf_token %}
+   Are you want to delete?
+    <input type="submit" value="delete">
+
+    </form>
+
+{% endblock %}
+

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{{p.tittle}}<br><br><br>
+{{p.des}}<br><br>
+<a href="{% url 'update' p.id %}"class="btn btn-warning">update</a>
+<a href="{% url 'delete' p.id %}" class="btn btn-danger">delete</a>
+{% endblock %}
